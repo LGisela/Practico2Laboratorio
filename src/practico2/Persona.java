@@ -1,8 +1,7 @@
-
 package practico2;
 
-
 public class Persona {
+
     private String nombre;
     private String apellido;
     private int edad;
@@ -17,42 +16,33 @@ public class Persona {
         this.reloj = reloj;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public String getNombre() {
         return nombre;
     }
 
-    
-    public void Hora(){
-        System.out.println("la Hora es : " +reloj.getHora());
-    
+    public void comer() {
+        System.out.println(nombre + " esta comiendo.");
     }
-    public void dia(){
-        System.out.println(" hoy es : " + reloj.getDia());
-    
+
+    public void hablar() {
+        System.out.println(nombre + " esta hablando.");
     }
-public void comer(){
-}
 
+    public int getEdad() {
+        return edad;
+    }
+    
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
-public void hablar() {
- 
- 
- 
- } 
-public void MisDatos(){
-    System.out.println(" nombre " + nombre);;
-    System.out.println(" Apellido " + apellido);;  
-     System.out.println(" edad " + edad);
-     
-     System.out.println(" altura " + altura + " metros ");
-     
-}
+    public void decirHora(Reloj reloj) {
+        System.out.println("La hora es: " + reloj.getHora() + " en el dia: " + reloj.getDia());
+    }
+    public void MisDatos() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
+        System.out.println("Edad: " + edad);
+        System.out.println("Altura: " + altura + " metros ");
+    }
 }

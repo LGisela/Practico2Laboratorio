@@ -1,11 +1,7 @@
-
 package practico2;
 
-import java.util.Locale;
-
-
 public class Reloj {
-   
+
     private int dia;
     private int hora;
     private String modelo;
@@ -34,26 +30,19 @@ public class Reloj {
         this.hora = hora;
     }
 
-    public void incrementarDia(){
-     this.dia++;
+    public void incrementarDia() {
+        this.dia++;
     }
-   public void incrementahora(){
-    this.hora++;
-    if(this.hora>=24){
-        this.hora=0;
-        incrementarDia();
-    }
-  
-   }
-   public void LimpiarPantall(){
-       System.out.println("limpiando pantalla");
-   
-   
-   }
-    
-    
-    
-    
-    }
-    
 
+    public void incrementahora() {
+        this.hora++;
+        if (this.hora >= 24) {
+            this.hora = 0;
+            incrementarDia();
+        }
+    }
+
+    public void LimpiarPantall() {
+        System.out.println("limpiando pantalla");
+    }
+}
