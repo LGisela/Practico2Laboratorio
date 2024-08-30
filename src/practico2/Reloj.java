@@ -31,7 +31,10 @@ public class Reloj {
     }
 
     public void incrementarDia() {
-        this.dia++;
+        if (this.dia < 31){
+           this.dia++; 
+        } else this.dia = 1;
+        
     }
 
     public void incrementahora() {
